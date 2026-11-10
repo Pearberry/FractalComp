@@ -115,3 +115,4 @@ def test_finer_domain_step_improves_or_matches_encoding_error() -> None:
     # with step=4 must be <= its fit RMSE with step=8.
     for tc, tf in zip(t_coarse, t_fine):
         assert tf.rmse_error <= tc.rmse_error + 1e-12
+

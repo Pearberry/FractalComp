@@ -306,3 +306,4 @@ class FractalCompressor:
             if t.range_x <= x < t.range_x + r and t.range_y <= y < t.range_y + r:
                 return t
         return None
+

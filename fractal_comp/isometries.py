@@ -75,3 +75,4 @@ def all_isometries(block: np.ndarray) -> np.ndarray:
         return np.stack([apply_isometry(block, idx) for idx in range(8)], axis=1)
     else:
         raise ValueError(f"Expected 2D or 3D array, got shape {block.shape}")
+

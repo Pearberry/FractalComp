@@ -68,3 +68,4 @@ def create_sample_image(size: int = 64, kind: str = "ascent") -> np.ndarray:
     canvas[(x > 0.68) & (x < 0.88) & (y > 0.12) & (y < 0.32)] = 0.10
 
     return np.clip(canvas, 0.0, 1.0)
+
